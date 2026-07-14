@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>営農型太陽光発電とは | 営農型太陽光発電プラットフォーム</title>
+<meta name="description" content="営農型太陽光発電(ソーラーシェアリング)の仕組み、一時転用許可、収量要件などの制度を、わかりやすく解説します。">
+<meta property="og:title" content="営農型太陽光発電とは | 営農型太陽光発電プラットフォーム">
+<meta property="og:description" content="営農型太陽光発電(ソーラーシェアリング)の仕組み、一時転用許可、収量要件などの制度を、わかりやすく解説します。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agrisolar.jp/solar-sharing.html">
+<meta property="og:site_name" content="営農型太陽光発電プラットフォーム">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-deep:#1C4A2A;
+  --green-mid:#2E6B3E;
+  --green-leaf:#4E9E5F;
+  --green-pale:#E4EFE4;
+  --amber:#E9A13B;
+  --amber-deep:#C97F1E;
+  --paper:#F7F9F5;
+  --sand:#F3EADA;
+  --sand-deep:#DFC89C;
+  --sand-line:#C9B183;
+  --brown:#7C5833;
+  --brown-line:#66471F;
+  --ink:#22302A;
+  --ink-soft:#5A6B60;
+  --line:#D9E2D8;
+  --serif:"Shippori Mincho B1",serif;
+  --sans:"Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.8;font-size:16px}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* Header */
+header{background:var(--brown);border-bottom:1px solid var(--brown-line);position:sticky;top:0;z-index:50}
+.head-top{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1100px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:40px;height:40px;flex:none}
+.brand-text{line-height:1.3}
+.brand-name{font-family:var(--serif);font-weight:800;font-size:1.05rem;color:#FFF6E4;letter-spacing:.02em}
+.brand-domain{font-size:.72rem;color:#E9D8B6;letter-spacing:.08em}
+nav.global{border-top:1px solid var(--brown-line);background:var(--sand-deep)}
+nav.global ul{max-width:1100px;margin:0 auto;display:flex;list-style:none;overflow-x:auto}
+nav.global a{display:block;padding:11px 16px;font-size:.85rem;font-weight:500;white-space:nowrap;border-bottom:3px solid transparent;transition:border-color .2s,color .2s}
+nav.global a:hover{color:var(--green-mid);border-bottom-color:var(--amber)}
+nav.global a.current{border-bottom-color:var(--amber-deep);color:var(--green-deep);font-weight:700}
+.head-cta{background:var(--amber);color:#fff;font-weight:700;font-size:.85rem;padding:10px 20px;border-radius:999px;transition:background .2s;flex:none}
+.head-cta:hover{background:var(--amber-deep)}
+
+/* Page title */
+.page-title{background:linear-gradient(180deg,#FDF6E9 0%,var(--paper) 100%);padding:52px 0 40px}
+.page-title .who{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--amber-deep);border:1px solid var(--amber);border-radius:999px;padding:3px 14px;background:#fff;margin-bottom:14px}
+.page-title h1{font-family:var(--serif);font-weight:800;font-size:clamp(1.6rem,3.4vw,2.3rem);color:var(--green-deep);letter-spacing:.03em}
+.page-title p{margin-top:12px;color:var(--ink-soft);max-width:46em}
+
+/* Sections */
+section{padding:60px 0}
+section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-title{font-family:var(--serif);font-weight:700;font-size:clamp(1.35rem,2.8vw,1.85rem);color:var(--green-deep);letter-spacing:.04em;margin-bottom:14px}
+.sec-lead{color:var(--ink-soft);max-width:46em;margin-bottom:32px}
+
+/* Cards */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 22px}
+section.alt .card{background:var(--paper)}
+.card h3{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--green-deep);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.card h3 .dot{width:10px;height:10px;border-radius:50%;background:var(--amber);flex:none}
+.card p,.card li{font-size:.88rem;color:var(--ink-soft)}
+.card ul{list-style:none;display:grid;gap:8px}
+.card ul li::before{content:"・";color:var(--green-leaf);font-weight:700}
+
+/* Point list */
+.points{list-style:none;display:grid;gap:14px;max-width:760px}
+.points li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--green-leaf);border-radius:10px;padding:16px 20px;font-size:.93rem}
+.points li strong{color:var(--green-deep)}
+section.alt .points li{background:var(--paper)}
+
+/* Steps */
+.flow{counter-reset:fs;display:grid;gap:12px;max-width:760px}
+.flow li{list-style:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 64px;position:relative;font-size:.92rem}
+.flow li::before{counter-increment:fs;content:counter(fs);position:absolute;left:18px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:var(--amber);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.flow li strong{color:var(--green-deep)}
+section.alt .flow li{background:var(--paper)}
+
+/* FAQ */
+.faq{max-width:820px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;padding:16px 20px;font-weight:700;color:var(--green-deep);list-style:none;position:relative;padding-right:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--amber-deep);font-weight:700}
+.faq details[open] summary::after{content:"−"}
+.faq .a{padding:0 20px 18px;font-size:.9rem;color:var(--ink-soft)}
+section.alt .faq details{background:var(--paper)}
+
+/* Table */
+.tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:.9rem}
+.tbl th,.tbl td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl th{background:var(--green-pale);color:var(--green-deep);font-weight:700;white-space:nowrap;width:11em}
+.tbl tr:last-child th,.tbl tr:last-child td{border-bottom:none}
+
+/* Notice */
+.notice{background:#FDF6E9;border:1px solid var(--sand-line);border-radius:12px;padding:18px 22px;font-size:.88rem;color:var(--ink-soft);max-width:820px}
+.notice strong{color:var(--amber-deep)}
+
+/* Buttons */
+.btn{display:inline-block;padding:14px 30px;border-radius:999px;font-weight:700;font-size:.95rem;transition:transform .15s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-amber{background:var(--amber);color:#fff;box-shadow:0 4px 14px rgba(233,161,59,.35)}
+.btn-amber:hover{background:var(--amber-deep)}
+.btn-line{border:2px solid var(--green-mid);color:var(--green-mid);background:#fff}
+.btn-line:hover{background:var(--green-pale)}
+
+/* News list */
+.news-list{list-style:none;max-width:860px}
+.news-list li{display:flex;gap:20px;padding:16px 4px;border-bottom:1px solid var(--line);font-size:.92rem;align-items:baseline}
+.news-date{color:var(--ink-soft);font-size:.82rem;flex:none;width:7em}
+.news-tag{flex:none;font-size:.7rem;font-weight:700;color:var(--green-mid);border:1px solid var(--green-leaf);border-radius:999px;padding:2px 10px}
+
+/* Form */
+.form-grid{display:grid;gap:18px;max-width:680px}
+.form-grid label{font-weight:700;font-size:.9rem;color:var(--green-deep);display:block;margin-bottom:6px}
+.form-grid label .req{color:#B0533E;font-size:.75rem;margin-left:6px}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:#fff;color:var(--ink)}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{outline:2px solid var(--amber);border-color:var(--amber)}
+.form-grid textarea{min-height:170px;resize:vertical}
+.form-grid button{border:none;cursor:pointer}
+
+/* CTA */
+.cta{padding:70px 0;text-align:center;background:linear-gradient(180deg,var(--paper) 0%,#FDF6E9 100%)}
+.cta h2{font-family:var(--serif);font-weight:800;font-size:clamp(1.4rem,3vw,2rem);color:var(--green-deep);margin-bottom:14px;letter-spacing:.04em}
+.cta p{color:var(--ink-soft);max-width:38em;margin:0 auto 28px}
+
+/* Footer */
+footer{background:var(--green-deep);color:#DCE7DD;padding:56px 0 28px;font-size:.85rem}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.18)}
+.foot-brand{font-family:var(--serif);font-weight:700;color:#fff;font-size:1rem;margin-bottom:10px}
+.foot-grid h4{font-size:.8rem;font-weight:700;color:var(--amber);letter-spacing:.1em;margin-bottom:12px}
+.foot-grid ul{list-style:none;display:grid;gap:8px}
+.foot-grid a:hover{color:#fff;text-decoration:underline}
+.foot-note{padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#A9BFAC;font-size:.78rem}
+
+@media(max-width:900px){
+  .grid2,.grid3{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .tbl th{width:8em}
+}
+@media(max-width:540px){
+  .foot-grid{grid-template-columns:1fr}
+  .news-list li{flex-wrap:wrap;gap:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto}
+}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-top">
+    <a class="brand" href="index.html" aria-label="営農型太陽光発電プラットフォーム トップページ">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="18" r="9" fill="#E9A13B"/>
+        <rect x="6" y="24" width="16" height="3.5" rx="1" fill="#1C4A2A" transform="rotate(-12 6 24)"/>
+        <rect x="26" y="21" width="16" height="3.5" rx="1" fill="#1C4A2A" transform="rotate(-12 26 21)"/>
+        <path d="M10 40 Q12 32 14 40 M22 40 Q24 31 26 40 M34 40 Q36 32 38 40" stroke="#4E9E5F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">営農型太陽光発電プラットフォーム</span><br>
+        <span class="brand-domain">AGRISOLAR.JP</span>
+      </span>
+    </a>
+    <a class="head-cta" href="contact.html">お問い合わせ</a>
+  </div>
+  <nav class="global" aria-label="グローバルナビゲーション">
+    <ul>
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="platform.html">プラットフォーム</a></li>
+      <li><a href="landowner.html">農地を活かす</a></li>
+      <li><a href="farmer.html">農業を元気に</a></li>
+      <li><a href="energy.html">再エネ調達</a></li>
+      <li><a href="partner.html">パートナー募集</a></li>
+      <li><a href="news.html">ニュース・制度</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<div class="page-title">
+  <div class="wrap">
+    <span class="who">基礎知識</span>
+    <h1>営農型太陽光発電とは</h1>
+    <p>農地の上で、農業と発電を両立させる仕組み。「ソーラーシェアリング」とも呼ばれるこの手法の基本と制度を解説します。</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">光を、作物と発電で分かち合う</h2>
+    <p class="sec-lead">農地に支柱を立て、間隔を空けて太陽光パネルを設置し、その下で農業を続けながら発電も行います。多くの作物には「光飽和点」があり、一定以上の強い光は生育に使われません。その余った光で発電しよう、という発想がソーラーシェアリング(営農型太陽光発電)です。日本で生まれ、2013年に農林水産省が農地への設置の取り扱いを通知したことで制度的に位置づけられました。</p>
+    <ul class="points">
+      <li><strong>農地はそのまま。</strong> パネルの支柱部分だけを「一時転用」する仕組みのため、農地全体を転用する必要がありません。</li>
+      <li><strong>営農が主役。</strong> 制度の大前提は農業の継続です。発電のために農業をやめることはできません。</li>
+      <li><strong>ひとつの土地から、ふたつの収穫。</strong> 営農収入と発電による収入・電気代削減が重なり、農業経営を支えます。</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="sec-title">制度のポイント</h2>
+    <table class="tbl">
+      <tr><th>一時転用許可</th><td>支柱の基礎部分について、農地法に基づく一時転用の許可を受けます。許可期間は原則3年以内で、条件により10年以内となる場合もあります。期間満了ごとに再許可(更新)が必要です。</td></tr>
+      <tr><th>収量の要件</th><td>パネル下の農作物の収量が、同じ年の地域の平均的な収量と比べておおむね2割以上減少しないことが求められます。作物選びと遮光率の設計が重要になる理由です。</td></tr>
+      <tr><th>営農報告</th><td>毎年、農作物の生産状況を農業委員会に報告します。営農が適切に続いていることが、事業継続の条件です。</td></tr>
+      <tr><th>農作業への配慮</th><td>トラクター等の農業機械が効率的に作業できるよう、支柱の高さや間隔を確保した設計が求められます。</td></tr>
+      <tr><th>撤去の担保</th><td>営農が行われなくなった場合には設備を撤去し、農地に復元することが前提です。信頼できる事業体制が欠かせません。</td></tr>
+    </table>
+    <p class="sec-lead" style="margin-top:20px;margin-bottom:0">※ 制度の詳細は改正されることがあります。最新の情報は<a href="news.html" style="color:var(--green-mid);font-weight:700;text-decoration:underline">ニュース・制度情報</a>でお伝えするほか、個別のご相談で最新の要件をご説明します。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">「売電の時代」から「使う時代」へ</h2>
+    <p class="sec-lead">かつてのFIT(固定価格買取制度)による高値売電の時代は終わり、地上設置の事業用太陽光発電は2027年度以降、FIT/FIP制度の支援対象外となる予定です。これからの営農型太陽光発電は、つくった電気を農業経営の中で使う(自家消費)、あるいは電気を必要とする企業と直接つながる(コーポレートPPA)という「電気の出口」の設計が成否を握ります。当プラットフォームが電力側の設計までご支援する理由が、ここにあります。</p>
+    <p><a class="btn btn-line" href="platform.html">プラットフォームでできることを見る</a></p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="sec-title">よくあるご質問</h2>
+    <div class="faq">
+      <details><summary>普通の太陽光発電(野立て)と何が違うのですか?</summary><div class="a">野立ては農地を完全に転用して発電専用にしますが、営農型は農地のまま、農業を続けながら発電します。使う制度も、事業の設計思想もまったく別物です。</div></details>
+      <details><summary>どんな作物でも育てられますか?</summary><div class="a">作物によって光の必要量(光飽和点)と遮光への耐性が異なります。半日陰を好む作物は相性が良く、光を多く必要とする作物は遮光率を抑えた設計が必要です。作物と設備をセットで計画します。</div></details>
+      <details><summary>許可が更新されないリスクはありますか?</summary><div class="a">営農が適切に行われていないと判断されれば、再許可は難しくなります。逆に言えば、堅実な営農計画と実行体制があれば過度に恐れる必要はありません。そこを支えるのが当プラットフォームの役割です。</div></details>
+      <details><summary>設置費用はどのくらいかかりますか?</summary><div class="a">規模・工法・地域条件によって大きく異なります。収支の見通しと資金調達の選択肢も含めて、個別にご説明しますのでお問い合わせください。</div></details>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta">
+  <div class="wrap">
+    <h2>まずは気軽にご相談してください</h2>
+    <p>農地のこと、営農のこと、発電事業のこと。「うちの土地でもできるのか」、「資金はどうしたらいい」等の素朴な疑問を、お気軽にお寄せください。</p>
+    <a class="btn btn-amber" href="contact.html">お問い合わせ</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">営農型太陽光発電<br>プラットフォーム</p>
+        <p>農地と、担い手と、電力需要をつなぎ、<br>日本の農業と地域の未来をひらく。</p>
+        <p style="margin-top:12px;color:#A9BFAC">agrisolar.jp</p>
+      </div>
+      <div>
+        <h4>目的から探す</h4>
+        <ul>
+          <li><a href="landowner.html">未利用農地を活かしたい</a></li>
+          <li><a href="farmer.html">農業をもっと元気にしたい</a></li>
+          <li><a href="energy.html">再エネ電力を調達したい</a></li>
+          <li><a href="partner.html">事業に参入したい</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>プラットフォーム</h4>
+        <ul>
+          <li><a href="platform.html">プラットフォームでできること</a></li>
+          <li><a href="solar-sharing.html">営農型太陽光発電とは</a></li>
+          <li><a href="partner.html">パートナー募集</a></li>
+          <li><a href="news.html">ニュース・制度情報</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="company.html">運営者情報</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p>運営:<a href="https://www.greenxalliance.org/" target="_blank" rel="noopener" style="text-decoration:underline">一般社団法人グリーンXアライアンス</a></p>
+      <p>© 2026 営農型太陽光発電プラットフォーム</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

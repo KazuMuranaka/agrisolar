@@ -71,6 +71,14 @@ nav.global a:hover{color:var(--green-mid);border-bottom-color:var(--amber)}
 .btn-line{border:2px solid var(--green-mid);color:var(--green-mid);background:#fff}
 .btn-line:hover{background:var(--green-pale)}
 
+/* ===== Entrance image cards ===== */
+.entry5{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.entry5 a{display:block;transition:transform .15s}
+.entry5 a:hover{transform:translateY(-5px)}
+.entry5 img{width:100%;height:auto}
+@media(max-width:900px){.entry5{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.entry5{grid-template-columns:1fr;max-width:340px;margin:0 auto}}
+
 /* ===== Entrance cards ===== */
 .entrances{padding:56px 0 72px}
 .sec-label{font-size:.78rem;font-weight:700;letter-spacing:.22em;color:var(--amber-deep);margin-bottom:10px}
@@ -211,62 +219,17 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--amber);outline-offset
   </div>
 </section>
 
-<!-- ===== 4 Entrances ===== -->
-<section class="entrances">
+<!-- ===== 5 Entrances ===== -->
+<section class="entrances" style="background:#fff;border-bottom:1px solid var(--line)">
   <div class="wrap">
     <h2 class="sec-title">あなたの目的から、はじめる。</h2>
-    <p class="sec-lead">営農型太陽光発電には、農地を持つ方、耕す方、電気を使う方、事業をつくる方 ── それぞれの関わり方があります。あなたに合った入口からお進みください。</p>
-    <div class="card-grid">
-
-      <a class="entry-card" href="landowner.html">
-        <svg class="entry-icon" viewBox="0 0 52 52" aria-hidden="true">
-          <rect x="6" y="26" width="40" height="18" rx="3" fill="#E4EFE4" stroke="#2E6B3E" stroke-width="2.5"/>
-          <path d="M10 26 L26 12 L42 26" fill="none" stroke="#2E6B3E" stroke-width="2.5" stroke-linejoin="round"/>
-          <circle cx="40" cy="12" r="6" fill="#E9A13B"/>
-        </svg>
-        <p class="entry-who">土地をお持ちの方へ</p>
-        <h3>未利用農地を活かしたい</h3>
-        <p>相続した農地、耕作をやめた田畑。手放さずに収益を生む土地へ。まずはお気軽にお問い合わせください。</p>
-        <span class="entry-link">詳しく見る</span>
-      </a>
-
-      <a class="entry-card" href="farmer.html">
-        <svg class="entry-icon" viewBox="0 0 52 52" aria-hidden="true">
-          <path d="M12 44 Q16 24 20 44 M18 42 V22 M18 22 Q10 20 10 12 Q20 12 18 22 M18 22 Q26 20 26 12 Q16 12 18 22" stroke="#2E6B3E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          <rect x="28" y="16" width="18" height="7" rx="2" fill="#1C4A2A" transform="rotate(-10 28 16)"/>
-          <circle cx="42" cy="8" r="5" fill="#E9A13B"/>
-        </svg>
-        <p class="entry-who">農家・農業法人の方へ</p>
-        <h3>農業をもっと元気にしたい</h3>
-        <p>営農収入に売電収入を重ねるダブルインカムで経営を安定させる。ソーラーシェアリングを始めたい農家の入口です。</p>
-        <span class="entry-link">詳しく見る</span>
-      </a>
-
-      <a class="entry-card" href="energy.html">
-        <svg class="entry-icon" viewBox="0 0 52 52" aria-hidden="true">
-          <rect x="8" y="14" width="24" height="30" rx="3" fill="#E4EFE4" stroke="#2E6B3E" stroke-width="2.5"/>
-          <rect x="13" y="20" width="6" height="6" fill="#2E6B3E"/><rect x="23" y="20" width="6" height="6" fill="#2E6B3E"/>
-          <rect x="13" y="30" width="6" height="6" fill="#2E6B3E"/><rect x="23" y="30" width="6" height="6" fill="#2E6B3E"/>
-          <path d="M40 12 L34 26 H40 L36 40 L46 22 H39 L44 12 Z" fill="#E9A13B"/>
-        </svg>
-        <p class="entry-who">企業・団体の方へ</p>
-        <h3>再エネ電力を調達したい</h3>
-        <p>RE100・脱炭素経営に、地域の農地から生まれる追加性のある再エネを。コーポレートPPAのご相談を承ります。</p>
-        <span class="entry-link">詳しく見る</span>
-      </a>
-
-      <a class="entry-card" href="partner.html">
-        <svg class="entry-icon" viewBox="0 0 52 52" aria-hidden="true">
-          <path d="M8 44 L8 20 L20 20 L20 44 M20 32 L32 32 L32 44 M32 24 L44 24 L44 44" fill="none" stroke="#2E6B3E" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M8 44 H46" stroke="#2E6B3E" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="42" cy="10" r="6" fill="#E9A13B"/>
-        </svg>
-        <p class="entry-who">商社・投資家・事業者の方へ</p>
-        <h3>営農型太陽光発電事業に参入したい</h3>
-        <p>用地開発から許認可、EPC、営農管理まで。開発ロードマップの全工程をワンストップでご支援します。</p>
-        <span class="entry-link">詳しく見る</span>
-      </a>
-
+    <p class="sec-lead">営農型太陽光発電には、農地を持つ方、耕す方、電気を使う方、事業をつくる方、専門性で支える方 ── それぞれの関わり方があります。あなたに合った入口からお進みください。</p>
+    <div class="entry5">
+      <a href="landowner.html"><img src="images/card-landowner.webp" alt="未利用農地を有効活用したい(農地所有者・自治体の方)詳しく見る" width="353" height="891" loading="lazy"></a>
+      <a href="farmer.html"><img src="images/card-farmer.webp" alt="農業をもっと元気にしたい(農家・農業法人の方)詳しく見る" width="353" height="891" loading="lazy"></a>
+      <a href="energy.html"><img src="images/card-energy.webp" alt="再エネ電力を調達したい(企業・商社の方)詳しく見る" width="353" height="891" loading="lazy"></a>
+      <a href="partner.html"><img src="images/card-develop.webp" alt="営農型太陽光発電事業に参入したい(事業者・投資家の方)詳しく見る" width="353" height="891" loading="lazy"></a>
+      <a href="partner.html#join"><img src="images/card-partner.webp" alt="パートナーとして参加したい(企業・団体の方)詳しく見る" width="353" height="891" loading="lazy"></a>
     </div>
   </div>
 </section>
